@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState } from "react";
+import AddTodo from "./components/AddTodo";
+import DisplayTodo from "./components/DisplayTodo";
 
-function App() {
+const App = () => {
+  const [todoList, settodoList] = useState([]);
+  const [modeChange, setModeChange] = useState([]);
+
+  const setTodoHandler = (name) => {
+    settodoList((prevState) => {
+      return [...prevState, { Name: name, id: Math.random().toString() }];
+    });
+  };
+
+  const removeTodoHandler = (id) => {
+    const removeArr = [...todoList].filter(
+      (removeItem) => removeItem.id !== id
+    );
+    settodoList(removeArr);
+  };
+
+  const themeChangeHandler = (mode) => {
+    setModeChange(mode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <AddTodo onsetTodo={setTodoHandler} themeChange={themeChangeHandler} />
+      <DisplayTodo
+        items={todoList}
+        removeTodo={removeTodoHandler}
+        mode={modeChange}
+      />
+    </Fragment>
   );
-}
+};
 
 export default App;

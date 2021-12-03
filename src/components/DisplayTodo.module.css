@@ -1,0 +1,106 @@
+.container {
+  background-color: hsl(235, 21%, 11%);
+  height: 60vh;
+}
+.darkContainer {
+  background-color: white;
+  height: 60vh;
+}
+.itemList {
+  position: absolute;
+  top: 35%;
+  left: 31%;
+  width: 500px;
+  padding: 1.2rem;
+  box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  background-color: hsl(235, 24%, 19%);
+  border-radius: 3px;
+  color: hsl(234, 11%, 52%);
+  font-family: "Josefin Sans", sans-serif;
+}
+.darkItemList {
+  position: absolute;
+  top: 35%;
+  left: 31%;
+  width: 500px;
+  padding: 1.2rem;
+  box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  border-radius: 3px;
+  color: hsl(234, 11%, 52%);
+  font-family: "Josefin Sans", sans-serif;
+}
+.item {
+  list-style: none;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+  margin-top: 0.2rem;
+  color: hsl(235, 19%, 35%);
+  font-size: 1rem;
+  display: flex;
+  padding: 0.6rem;
+
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.item img {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+  width: 0.8rem;
+  cursor: pointer;
+}
+.darkItem {
+  color: white;
+  list-style: none;
+  border-bottom: 1px solid hsl(233, 14%, 35%);
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  display: flex;
+  padding: 0.6rem;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.darkItem img {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+  width: 0.8rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .itemList {
+    top: 37%;
+    left: 12.5%;
+    width: 80%;
+    padding: 0.8rem;
+    overflow: hidden;
+  }
+  .darkItemList {
+    top: 37%;
+    left: 12.5%;
+    width: 80%;
+    padding: 0.8rem;
+    overflow: hidden;
+  }
+  .container {
+    height: 75vh;
+  }
+  .darkContainer {
+    height: 75vh;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .itemList {
+    left: 16%;
+    width: 65%;
+  }
+  .darkItemList {
+    left: 16%;
+    width: 65%;
+  }
+}

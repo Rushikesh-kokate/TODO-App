@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+.darkMode {
+  background-image: url("./images/bg-desktop-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightMode {
+  background-image: url("./images/bg-desktop-light.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  background-color: hsl(235, 24%, 19%);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.9rem 1.7rem;
+  margin-top: 2rem;
+  width: 500px;
+  box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+}
+::placeholder {
+  color: hsl(234, 11%, 52%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+.inputLightMode {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 0.9rem 1.7rem;
+  margin-top: 2rem;
+  width: 500px;
+  box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 6px -2px rgba(0, 0, 0, 0.75);
+}
+.inputLightMode::placeholder {
+  color: hsl(234, 11%, 52%);
+}
+label {
+  display: block;
+  letter-spacing: 1rem;
+  font-size: 1.7rem;
+  color: white;
+  margin-left: 0.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+.theme {
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .darkMode {
+    background-image: url("./images/bg-mobile-dark.jpg");
+    height: 35vh;
+    position: relative;
+  }
+  .lightMode {
+    background-image: url("./images/bg-mobile-light.jpg");
+    height: 35vh;
+    position: relative;
+  }
+  .input {
+    width: 80vw;
+    margin-left: 1rem;
+  }
+  .inputLightMode {
+    width: 80vw;
+    margin-left: 1rem;
+  }
+  .theme {
+    position: absolute;
+    top: 27%;
+    right: 10%;
+  }
+  label {
+    letter-spacing: 0.5rem;
+    margin-top: 3.7rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .darkMode {
+    width: 100%;
+  }
+  .lightMode {
+    width: 100%;
+  }
+  .input {
+    width: 65vw;
+  }
+  .inputLightMode {
+    width: 65vw;
+  }
+}
