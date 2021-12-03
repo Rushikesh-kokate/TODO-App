@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/TODO-App/static/css/main.e26ba19d.chunk.css",
+    "main.js": "/TODO-App/static/js/main.310adda2.chunk.js",
+    "main.js.map": "/TODO-App/static/js/main.310adda2.chunk.js.map",
+    "runtime-main.js": "/TODO-App/static/js/runtime-main.56fe784a.js",
+    "runtime-main.js.map": "/TODO-App/static/js/runtime-main.56fe784a.js.map",
+    "static/js/2.90f8b6cc.chunk.js": "/TODO-App/static/js/2.90f8b6cc.chunk.js",
+    "static/js/2.90f8b6cc.chunk.js.map": "/TODO-App/static/js/2.90f8b6cc.chunk.js.map",
+    "static/js/3.ac93d708.chunk.js": "/TODO-App/static/js/3.ac93d708.chunk.js",
+    "static/js/3.ac93d708.chunk.js.map": "/TODO-App/static/js/3.ac93d708.chunk.js.map",
+    "index.html": "/TODO-App/index.html",
+    "static/css/main.e26ba19d.chunk.css.map": "/TODO-App/static/css/main.e26ba19d.chunk.css.map",
+    "static/js/2.90f8b6cc.chunk.js.LICENSE.txt": "/TODO-App/static/js/2.90f8b6cc.chunk.js.LICENSE.txt",
+    "static/media/AddTodo.module.css": "/TODO-App/static/media/bg-desktop-light.3508d620.jpg",
+    "static/media/icon-cross.6ee81d30.svg": "/TODO-App/static/media/icon-cross.6ee81d30.svg",
+    "static/media/icon-moon.6c03114b.svg": "/TODO-App/static/media/icon-moon.6c03114b.svg",
+    "static/media/icon-sun.910b1f9a.svg": "/TODO-App/static/media/icon-sun.910b1f9a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.56fe784a.js",
+    "static/js/2.90f8b6cc.chunk.js",
+    "static/css/main.e26ba19d.chunk.css",
+    "static/js/main.310adda2.chunk.js"
+  ]
+}
